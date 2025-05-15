@@ -1,0 +1,16 @@
+[package]
+name = "keccak"
+version = "1.0.0"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+#
+
+[lib]
+name = "keccak"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+rustler = "0.35"
+tiny-keccak = { version = "2.0", features = ["keccak"] }

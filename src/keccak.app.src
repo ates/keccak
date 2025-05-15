@@ -1,0 +1,6 @@
+{application, keccak, [
+    {description, "Keccak-256"},
+    {vsn, "1.0.0"},
+    {applications, [kernel, stdlib]},
+    {licenses, ["Apache 2.0"]}
+]}.
